@@ -52,7 +52,6 @@ PATH="$HOME/bin:$PATH" PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" ./conf
   --enable-libfreetype \
   --enable-libmp3lame \
   --enable-libopus \
-  --enable-libdav1d \
   --enable-libvorbis \
   --enable-libvpx \
   --enable-libx264 \
