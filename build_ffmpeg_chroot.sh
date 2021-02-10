@@ -25,16 +25,18 @@ apt-get update -qq && apt-get -y install \
   wget \
   yasm \
   zlib1g-dev
-
 # Create directories
 mkdir -p ~/ffmpeg_sources ~/bin
-
 # Install NASM
-apt-get install -y nasm
-
+apt-get install nasm
 # Install encoder/decoders
-apt-get install -y libx264-dev libx265-dev libnuma-dev libvpx-dev libfdk-aac-dev libmp3lame-dev libopus-dev libdav1d-dev
-
+apt-get install libx264-dev \
+  libx265-dev \
+  libnuma-dev \
+  libvpx-dev \
+  libfdk-aac-dev \
+  libmp3lame-dev \
+  libopus-dev
 cd ~/ffmpeg_sources && \
 wget -O ffmpeg-snapshot.tar.bz2 https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2 && \
 tar xjvf ffmpeg-snapshot.tar.bz2 && \
