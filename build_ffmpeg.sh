@@ -17,6 +17,7 @@ sudo apt-get update -qq && sudo apt-get -y install \
   libxcb1-dev \
   libxcb-shm0-dev \
   libxcb-xfixes0-dev \
+  libunistring-dev \
   meson \
   ninja-build \
   pkg-config \
