@@ -57,6 +57,7 @@ PATH="$HOME/bin:$PATH" PKG_CONFIG_PATH="$HOME/ffmpeg_build/lib/pkgconfig" ./conf
   --enable-libx264 \
   --enable-libx265 \
   --enable-nonfree && \
-PATH="$HOME/bin:$PATH" make -j3 && \
+PATH="$HOME/bin:$PATH" make -j8 && \
 make install && \
 hash -r
+cp ~/bin/* /usr/local/bin
